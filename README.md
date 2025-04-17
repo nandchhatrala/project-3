@@ -74,13 +74,3 @@ This project is a simple Pac-Man-style game developed using **OpenGL** and **GLU
 - The code is meant for educational purposes and can be expanded upon for more features.
 
 ---
-
-## 📷 Screenshots (optional)
-
-_Add screenshots of gameplay here for better visualization._
-
----
-
-## 📜 License
-
-MIT License (or as specified by your instructor)
