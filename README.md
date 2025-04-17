@@ -32,8 +32,8 @@ This project is a simple Pac-Man-style game developed using **OpenGL** and **GLU
 
 | Key       | Action              |
 |-----------|---------------------|
-| Arrow Keys | Move Pac-Man        |
-| R         | Restart Game        |
+| W,A,S,D | Move Pac-Man        |
+|Spacebar | Restart Game        |
 | ESC       | Exit Game           |
 
 ---
