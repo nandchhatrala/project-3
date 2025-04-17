@@ -34,7 +34,6 @@ This project is a simple Pac-Man-style game developed using **OpenGL** and **GLU
 |-----------|---------------------|
 | W,A,S,D | Move Pac-Man        |
 |Spacebar | Restart Game        |
-| ESC       | Exit Game           |
 
 ---
 
