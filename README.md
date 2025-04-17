@@ -1,8 +1,6 @@
-# Pac-Man Clone using OpenGL
+# Pac-Man using OpenGL
 
-### Author: Patricia Terol  
 ### Course: IT 206 
-### Project: assign10
 
 ---
 
