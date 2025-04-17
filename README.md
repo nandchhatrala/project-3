@@ -1,56 +1,89 @@
-# Racing Moto - Bike Racing Game
+# Pac-Man Clone using OpenGL
 
-## Overview
-Racing Moto is a classic bike racing game developed using Turbo C++ with BGI graphics. The player controls a bike moving through three lanes, avoiding obstacles while collecting bonuses to increase their score.
+### Author: Patricia Terol  
+### Course: CSE 2050  
+### Project: assign10
 
-## Game Features
-- Three-lane bike racing gameplay
-- Multiple obstacle types (pit holes, humans, bonuses)
-- Progressive difficulty with increasing speed
-- High score system with persistent storage
-- Keyboard-controlled movement (arrow keys)
-- Multiple game screens (menu, instructions, high scores)
+---
 
-## How to Play
-1. Use LEFT and RIGHT arrow keys to switch lanes
-2. Avoid pit holes and humans
-3. Collect bonuses (B) for extra points
-4. Survive as long as possible to advance levels
+## 🎮 Project Overview
 
-## Obstacle Types
-- *Bonus (B)*: Collect for +100 points
-- *Pit Hole*: Instant game over if hit
-- *Human*: Instant game over if hit
-- *Pit+Human Combo*: Most dangerous obstacle
+This project is a simple Pac-Man-style game developed using **OpenGL** and **GLUT**. It features:
 
-## Technical Details
-- Developed in Turbo C++
-- Uses BGI graphics library
-- Saves high scores to "High_Score.txt"
-- Requires proper BGI driver path configuration
+- A maze with border walls and multiple obstacle sections
+- A player-controlled Pac-Man character
+- Four autonomous monsters with movement
+- Dots (food) scattered throughout the map to collect
+- A scoring system
 
-## File Structure
-- Main game logic in single C++ file
-- High scores stored in external text file
-- Uses standard Turbo C++ libraries (graphics.h, conio.h, etc.)
+---
 
-## Compilation Instructions
-1. Open in Turbo C++ IDE
-2. Ensure BGI path is correctly set
-3. Compile and run
+## 🧱 Structure
 
-## Controls
-- LEFT ARROW: Move bike left
-- RIGHT ARROW: Move bike right
-- ENTER: Select menu options
+- `main.cpp` – Core logic and rendering code
+- Maze is defined using:
+  - `border`, `obstaclesTop`, `obstaclesMiddle`, `obstaclesBottom`
+- Food coordinates are stored in a `deque`
+- Game world is represented using a `bitmap` for collision detection
 
-## Game Screens
-1. Animated intro screen
-2. Main menu (Play, Instructions, High Scores, Exit)
-3. Gameplay screen
-4. Game over screen with stats
-5. High score display
-6. Exit confirmation
+---
 
-## Note
-This game was designed for the classic Turbo C++ environment and may require adjustments to run on modern systems.
+## 🎮 Controls
+
+| Key       | Action              |
+|-----------|---------------------|
+| Arrow Keys | Move Pac-Man        |
+| R         | Restart Game        |
+| ESC       | Exit Game           |
+
+---
+
+## 🧠 Game Logic
+
+- Food is eaten when Pac-Man overlaps its coordinates
+- Monsters move in preset directions
+- Collision with monsters ends the game (not shown here but assumed in full project)
+- The game ends when all food is eaten
+
+---
+
+## 💻 Requirements
+
+- C++ Compiler
+- GLUT and OpenGL libraries installed
+- Windows OS (uses `windows.h`)
+
+---
+
+## 🔧 How to Build and Run
+
+1. Install [FreeGLUT](http://freeglut.sourceforge.net/) or use any OpenGL development setup.
+2. Compile the project using any C++ compiler that supports OpenGL:
+    ```bash
+    g++ main.cpp -o PacMan -lopengl32 -lglu32 -lfreeglut
+    ```
+3. Run the executable:
+    ```bash
+    ./PacMan
+    ```
+
+> Make sure the OpenGL and GLUT libraries are linked properly!
+
+---
+
+## 📌 Notes
+
+- This version of the game is a prototype and does not contain full gameplay features like lives, score display on screen, or full monster AI.
+- The code is meant for educational purposes and can be expanded upon for more features.
+
+---
+
+## 📷 Screenshots (optional)
+
+_Add screenshots of gameplay here for better visualization._
+
+---
+
+## 📜 License
+
+MIT License (or as specified by your instructor)
